@@ -1,1 +1,0 @@
-Alter Table killi_node_link Add Column constraints_padlock TEXT After constraints_label;

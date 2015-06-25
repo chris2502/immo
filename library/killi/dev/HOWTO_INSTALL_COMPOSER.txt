@@ -1,8 +1,0 @@
-# https://getcomposer.org/doc/03-cli.md
-
-# dans votre /home/user
-curl -sS https://getcomposer.org/installer | php
-sudo mv composer.phar /usr/local/bin/composer
-
-# dans /var/www/applicatif/library/killi
-composer install
