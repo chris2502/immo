@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Édition de découpage" />
+	<navigator object="decoupage" />
+
+	<list object="decoupage">
+		<field search="1" attribute="libelle" />
+		<field search="1" attribute="mise_en_vente_id" />
+	</list>
+
+	<form object="acheteur">
+		<notebook>
+			<page string="Informations">
+				<field attribute="libelle" />
+				<field attribute="mise_en_vente_id" />
+			</page>
+		</notebook>
+	</form>
+	
+	<create object="acheteur">
+		<notebook>
+			<page string="Informations">
+				<field attribute="libelle" />
+				<field attribute="mise_en_vente_id" />
+			</page>
+		</notebook>
+	</create>
+	
+
+</data>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+
+	<title string="Query SQL Stats" />
+	<navigator object="statsquery" />
+
+	<list object="statsquery">
+		<field search="1" attribute="nom" />
+		<field search="1" attribute="cat_id" />
+		<field search="1" attribute="type_id" />
+		<field search="1" attribute="object" />
+		<field search="1" attribute="param_object" />
+	</list>
+
+	<form object="statsquery">
+		<field attribute="nom" />
+		<field attribute="cat_id" />
+		<field attribute="type_id" />
+		<field attribute="object" />
+		<field attribute="param_object" />
+		<field attribute="query_sql" />
+
+		<newline />
+		<newline />
+		<group>
+			<col width="33%">
+			</col>
+			<col width="33%">
+				<action object="reporting" method="process" string="Calculer maintenant" />
+			</col>
+			<col width="33%">
+			</col>
+		</group>
+
+	</form>
+
+</data>
+
+

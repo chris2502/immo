@@ -1,0 +1,103 @@
+/* -------------------------------------------------------------------
+// markItUp!
+// By Jay Salvat - http://markitup.jaysalvat.com/
+// ------------------------------------------------------------------*/
+.markItUp .markItUpButton1 a {
+	background-image:url(../images/markitup/set/h1.png); 
+}
+.markItUp .markItUpButton2 a {
+	background-image:url(../images/markitup/set/h2.png); 
+}
+.markItUp .markItUpButton3 a {
+	background-image:url(../images/markitup/set/h3.png); 
+}
+.markItUp .markItUpButton4 a {
+	background-image:url(../images/markitup/set/h4.png); 
+}
+.markItUp .markItUpButton5 a {
+	background-image:url(../images/markitup/set/h5.png); 
+}
+.markItUp .markItUpButton6 a {
+	background-image:url(../images/markitup/set/h6.png); 
+}
+.markItUp .markItUpButton7 a {
+	background-image:url(../images/markitup/set/paragraph.png); 
+}
+
+.markItUp .markItUpButton8 a {
+	background-image:url(../images/markitup/set/bold.png);
+}
+.markItUp .markItUpButton9 a {
+	background-image:url(../images/markitup/set/italic.png);
+}
+.markItUp .markItUpButton10 a {
+	background-image:url(../images/markitup/set/stroke.png);
+}
+
+.markItUp .markItUpButton11 a {
+	background-image:url(../images/markitup/set/list-bullet.png);
+}
+.markItUp .markItUpButton12 a {
+	background-image:url(../images/markitup/set/list-numeric.png);
+}
+
+.markItUp .markItUpButton13 a {
+	background-image:url(../images/markitup/set/picture.png); 
+}
+
+.markItUp .markItUpButton14 a {
+	background-image:url(../images/markitup/set/picture_add.png); 
+	margin-top:1px;
+}
+
+.markItUp .markItUpButton15 a {
+	background-image:url(../images/markitup/set/link.png);
+}
+
+.markItUp .markItUpButton16 a	{
+	background-image:url(../images/markitup/set/quotes.png);
+}
+.markItUp .markItUpButton17 a	{
+	background-image:url(../images/markitup/set/code.png);
+}
+
+.markItUp .preview a {
+	background-image:url(../images/markitup/set/preview.png);
+}
+
+
+/* Styles for InlineUpload widget by brian ally, zijn digital
+* Add these to the bottom of the default set stylesheet.
+* Don't forget to supply a cancel.png!
+*/
+.markItUpInlineUpload
+{
+	position: absolute;
+	z-index: 5;
+	width: 300px;
+	margin: 22px 0 0 40px;
+	padding: 1em;
+	background-color: #EEE;
+	border:3px solid #3C769D;
+	border-top-color: #EEE;
+}
+.markItUpInlineUpload > div { position: relative; } /* for positioning "loading" image */
+ 
+.markItUpInlineUpload label
+{
+	float: left; clear: left;
+	width: 4em; height: 2em;
+	padding-right: .5em;
+	font-size: 80%;
+	font-weight: bold;
+	color: #666;
+	text-align: right;
+}
+#inline_upload_close
+{
+	float: right;
+	width: 16px; height: 16px;
+	margin-top: 4px;
+	cursor: pointer;
+}
+#inline_upload_iframe { display: none; }

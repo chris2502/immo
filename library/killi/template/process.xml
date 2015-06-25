@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+
+	<header />
+	<menu />
+	<title string="Process" />
+	<navigator object="process" />
+
+	<list object="process" key="process_id">
+		<field object="process" attribute="process_id" search="1" />
+		<field object="process" attribute="name" search="1" />
+		<field object="process" attribute="internal_name" search="1" />
+		<field object="process" attribute="module_depart_id" search="1" />
+		<field object="process" attribute="actif" search="1" />
+	</list>
+
+	<create object="process">
+		<notebook>
+			<page string="Informations">
+				<field object="process" attribute="name" />
+				<field object="process" attribute="internal_name"/>
+				<field object="process" attribute="actif" />
+			</page>
+		</notebook>
+	</create>
+
+	<form object="process">
+		<notebook>
+			<page string="Informations">
+				<field object="process" attribute="name" />
+				<field object="process" attribute="internal_name"/>
+				<field object="process" attribute="module_depart_id" />
+				<field object="process" attribute="actif" />
+				<processeditor />
+			</page>
+		</notebook>
+	</form>
+</data>

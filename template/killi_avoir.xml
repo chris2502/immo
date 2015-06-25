@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Édition de avoir" />
+	<navigator object="killi_avoir" />
+
+	<list object="killi_avoir">
+		<field search="1" attribute="local_id" />
+		<field search="1" attribute="entite_id" />
+	</list>
+
+	<form object="killi_avoir">
+		<notebook>
+			<page string="Informations">
+				<field attribute="local_id" />
+				<field attribute="entite_id" />
+			</page>
+		</notebook>
+	</form>
+	
+	
+	<create object="killi_avoir">
+		<notebook>
+			<page string="Informations">
+				<field attribute="local_id" />
+				<field attribute="entite_id" />
+			</page>
+		</notebook>
+	</create>
+
+</data>

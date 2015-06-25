@@ -1,0 +1,6 @@
+<?php
+
+DEFINE("DBSI_HOSTNAME",'localhost');
+DEFINE("DBSI_USERNAME",'root');
+DEFINE("DBSI_PASSWORD",'');
+DEFINE('DBSI_DATABASE','ftth_v3');

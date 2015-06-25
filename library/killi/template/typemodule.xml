@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+
+	<header />
+	<menu />
+	<title string="Type Module" />
+	<navigator object="typemodule" />
+
+	<list object="typemodule" key="class_id">
+		<field object="typemodule" attribute="class_name" search="1" />
+		<field object="typemodule" attribute="name" search="1" />
+		<field object="typemodule" attribute="desc" search="1" />
+	</list>
+
+	<create object="typemodule">
+		<notebook>
+			<page string="Informations">
+				<field object="typemodule" attribute="class_name" />
+				<field object="typemodule" attribute="name" />
+				<field object="typemodule" attribute="desc" />
+			</page>
+		</notebook>
+	</create>
+
+	<form object="typemodule">
+		<notebook>
+			<page string="Informations">
+				<field object="typemodule" attribute="class_name" />
+				<field object="typemodule" attribute="name" />
+				<field object="typemodule" attribute="desc" />
+			</page>
+		</notebook>
+	</form>
+
+</data>

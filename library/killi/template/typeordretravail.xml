@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+
+	<title string="Type Odre de travail" />
+	<navigator object="typeordretravail" />
+
+	<list object="typeordretravail">
+		<field search="1" attribute="nom" />
+	</list>
+
+	<form object="typeordretravail">
+		<field attribute="nom" />
+		<field attribute="obsolete" />
+	</form>
+
+</data>

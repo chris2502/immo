@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Édition de acheteurmiseenvente" />
+	<navigator object="acheteurmiseenvente" />
+
+	<list object="acheteurmiseenvente">
+		<field search="1" attribute="acheteur_id" />
+		<field search="1" attribute="mise_en_vente_id" />
+		<field search="1" attribute="date_revente" />
+	</list>
+
+	<form object="acheteurmiseenvente">
+		<notebook>
+			<page string="Informations">
+			<field attribute="acheteur_id" />
+			<field attribute="mise_en_vente_id" />
+			<field attribute="date_revente" />
+			</page>
+		</notebook>
+	</form>
+	
+	<create object="acheteurmiseenvente">
+		<notebook>
+			<page string="Informations">
+				<field attribute="acheteur_id" />
+				<field attribute="mise_en_vente_id" />
+				<field attribute="date_revente" />
+			</page>
+		</notebook>
+	</create>
+	
+
+</data>

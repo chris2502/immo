@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Populations" />
+	<navigator object="population" />
+	<list object="population">
+		<field search="1" attribute="object_type" />
+		<field search="1" attribute="label" />
+		<field search="1" attribute="priority" />
+	</list>
+	<form object="population">
+		<key object="population" attribute="population_id" />
+		<field readonly="0" attribute="label" />
+		<field readonly="1" attribute="object_type" />
+		<field readonly="0" attribute="priority" />
+		<field readonly="1" attribute="query_select" type="textarea" />
+		<field readonly="0" attribute="query_join" type="textarea" />
+		<field readonly="0" attribute="query_where" type="textarea" />
+	</form>
+</data>

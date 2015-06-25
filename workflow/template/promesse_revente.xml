@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Édition de promesse revente" />
+	<navigator object="miseenvente" />
+
+	<list object="miseenvente" show_wfcommentaire = "0" show_wfqualification = "0">
+		<workflow_button width="250px" string="Déplacer vers acte authentique revente" destination="wfrevente.authentique_revente"/>
+		<workflow_button width="250px" string="Déplacer vers sortie promesse" destination="wfrevente.sortie_prommesse"/>
+		<field search="1" attribute="notaire"/>
+		<field search="1" attribute="plaque_id" />
+		<field search="1" attribute="nro_id" />
+		<field search="1" attribute="adresse" />
+		<field search="1" attribute="type_surface" />
+		<field search="1" attribute="surface_brute" />
+		<field search="1" attribute="surface_m_carre" />
+		<field search="1" attribute="estimation_bien" />
+		<field search="1" attribute="estimation_valide_ci" />
+		<field search="1" attribute="prix_rentabilite" />
+		<field search="1" attribute="estimation_prix" />
+		<field search="1" attribute="moyen_marche" />
+		<field search="1" attribute="prix_demande" />
+		<field search="1" attribute="cle_acces" />
+		<field search="1" attribute="porte_anti_squat" />
+		<field search="1" attribute="alarme_surface" />
+		<field search="1" attribute="niveau" />
+		<field search="1" attribute="statut_revente"/>
+		
+	</list>	
+	
+	
+	<form object="miseenvente">
+		<notebook>
+			<page string="Informations">
+				<group>
+					<col width="50%">
+						<field attribute="valide"/>
+						<field attribute="notaire"/>
+						<field attribute="type_surface" />
+						<field attribute="surface_brute" />
+						<field attribute="surface_m_carre" />
+						<field attribute="estimation_bien" />
+						<field attribute="estimation_valide_ci" />
+						<field attribute="prix_rentabilite" />
+						<field attribute="estimation_prix" />
+						<field attribute="moyen_marche" />
+						<field attribute="prix_demande" />
+						<field attribute="cle_acces" />
+						<field attribute="porte_anti_squat" />
+						<field attribute="alarme_surface" />
+						<field attribute="niveau" />
+						<!-- <field attribute="acquisition_id" readonly="1" /> -->
+						<field attribute="statut_revente"/>
+					</col>
+					<col width="50%">
+						
+						
+						<listing target="blank" object="Offre" key="offre_id" env="offre.mise_en_vente_id=miseenvente.mise_en_vente_id" data_src="offre" string="offre" create="1"  unlink="1">
+							<field search="1" attribute="validation_commission" readonly="1"/>
+							<field search="1" attribute="reponse_a_offre" readonly="1"/>
+							<field search="1" attribute="montant_offre" readonly="1"/>
+							<field search="1" attribute="prixLocationByCarre" readonly="1"/>
+							<field search="1" attribute="montantOffreByCarre" readonly="1"/>				
+						</listing>
+						
+						<listing target="blank" object="Commentaire" key="commentaire_id" env="commentaire.mise_en_vente_id=miseenvente.mise_en_vente_id" data_src="commentaire" string="Commentaire" create="1" unlink="1">
+							<field search="1" attribute="titre_commentaire" readonly="1"/>
+							<field search="1" attribute="contenu" readonly="1"/>
+							<field search="1" attribute="etape" readonly="1"/>
+						</listing>
+						
+						<listing target="blank" object="Mandat" key="mandat_id" env="mandat.mise_en_vente_id=miseenvente.mise_en_vente_id" data_src="mandat" string="mandat" create="1"  unlink="1">
+							<field search="1" attribute="montant" readonly="1"/>
+							<field search="1" attribute="detenteur" readonly="1"/>
+							<field search="1" attribute="validite" readonly="1"/>			
+						</listing>
+					</col>
+				</group>
+			</page>
+		</notebook>
+	</form>
+
+</data>

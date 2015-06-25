@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Édition d'entite" />
+	<navigator object="entite" />
+
+	<list object="entite">
+		<field search="1" attribute="type" />
+		<field search="1" attribute="nom" />
+		<field search="1" attribute="tel" />
+		<field search="1" attribute="mobile" />
+		<field search="1" attribute="email" />
+		<field search="1" attribute="adresse" />
+		<field search="1" attribute="email" />
+		<field search="1" attribute="fax" />
+	</list>
+
+	<form object="entite">
+		<notebook>
+			<page string="Informations">
+				<field attribute="type" id="entite" />
+				<field attribute="nom" />
+				<field attribute="tel" />
+				<field attribute="mobile" />
+				<field attribute="email" />
+				<field attribute="adresse" />
+				<field attribute="fax" />
+			</page>
+		</notebook>
+	</form>
+	
+	<create object="entite">
+		<notebook>
+			<page string="Informations">
+						<field attribute="type" id="entite" />
+						<field attribute="nom" />
+						<field attribute="tel" />
+						<field attribute="mobile" />
+						<field attribute="email" />
+						<field attribute="adresse" />
+						<field attribute="fax" />
+					
+			</page>
+		</notebook>
+	</create>
+	
+
+</data>

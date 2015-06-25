@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+
+	<header />
+	<menu />
+	<title string="Import de csv" />
+	<form object="csvimport" action="csvimport.write">
+		<newline />
+		<newline />
+		<group>
+			<col width="25%"></col>
+			<col>
+				<separator string="Nom de l'object" />
+				<group>
+					<col>
+						<selector width="100px" name="objectselected" data="objectlist" value="" />
+					</col>
+				</group>
+				<separator string="Nom du fichier à télécharger" />
+				<group>
+					<col>
+						<upload name="csvfile" />
+					</col>
+				</group>
+				<separator string="" />
+				<group>
+					<col>
+						<submit width="100px" object="csvimport" string="Télécharger" />
+					</col>
+				</group>
+			</col>
+			<col width="25%"></col>
+		</group>
+	</form>
+</data>
+

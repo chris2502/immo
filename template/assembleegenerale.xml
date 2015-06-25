@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Édition d'assemblée générale" />
+	<navigator object="assembleegenerale" />
+
+	<list object="assembleegenerale">
+		<field search="1" attribute="type" />
+		<field search="1" attribute="date_ag" />
+		<field search="1" attribute="local_id" />
+		<field search="1" attribute="statut_acquisition" />
+	</list>
+
+	<form object="assembleegenerale">
+		<notebook>
+			<page string="Informations">
+				<field attribute="type" />
+				<field attribute="date_ag" />
+				<field attribute="local_id" readonly="1"/>
+				<field attribute="statut_acquisition" />
+			</page>
+		</notebook>
+	</form>
+	
+	<create object="assembleegenerale">
+		<notebook>
+			<page string="Informations">
+				<field attribute="type" />
+				<field attribute="date_ag" />
+				<field attribute="local_id" readonly="1"/>
+				<field attribute="statut_acquisition" />
+			</page>
+		</notebook>
+	</create>
+	
+
+</data>

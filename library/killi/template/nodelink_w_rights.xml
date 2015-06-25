@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+
+	<title string="Gestion des liaisons des noeuds de workflow" />
+	<navigator object="nodelink" />
+
+	<list object="nodelink">
+		<field search="1" attribute="input_node" />
+		<field search="1" attribute="input_workflow" selector="1" />
+		<field search="1" attribute="output_node" />
+		<field search="1" attribute="output_workflow" selector="1" />
+		<field search="1" attribute="traitement_echec" />
+		<field attribute="hidden" />
+		<field search="1" attribute="mandatory_comment" />
+		<field attribute="label" />
+	</list>
+
+	<form object="nodelink">
+		<notebook>
+			<page string="Informations">
+				<field attribute="input_node" />
+				<field attribute="output_node" />
+				<field attribute="traitement_echec" />
+				<field attribute="label" />
+				<field attribute="display_average" />
+				<field attribute="deplacement_manuel" />
+				<field attribute="hidden" />
+				<field attribute="mandatory_comment" />
+				<field attribute="constraints" />
+				<field readonly="0" attribute="constraints_label" />
+			</page>
+		</notebook>
+	</form>
+
+	<create object="nodelink">
+		<notebook>
+			<page string="Nouveau lien de noeud">
+				<field attribute="input_node" />
+				<field attribute="output_node" />
+				<field attribute="traitement_echec" />
+				<field attribute="label" />
+				<field attribute="display_average" />
+				<field attribute="deplacement_manuel" />
+				<field attribute="hidden" />
+				<field attribute="mandatory_comment" />
+				<field attribute="constraints" />
+				<field attribute="constraints_label" />
+			</page>
+		</notebook>
+	</create>
+
+</data>

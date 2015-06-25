@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+
+	<title string="Messagerie" />
+	<navigator object="notification" edit='0' save='0' />
+
+	<list object="notification">
+		<button string="Marquer comme lu" action="notification.markAsRead" icon="mail-read" width="155px" />
+		<button string="Marquer comme non lu" action="notification.markAsUnread" icon="mail-unread" width="170px" />
+
+		<field search="1" attribute="subject" attrs='notification:killi_notification_read:0;background-color:#FFE4A9' />
+		<field search="1" attribute="killi_priority_id" selector='1' attrs='notification:killi_notification_read:0;background-color:#FFE4A9' enable_link="0" />
+		<field search="1" attribute="notification_date" attrs='notification:killi_notification_read:0;background-color:#FFE4A9' />
+		<field search="1" attribute="killi_notification_read" attrs='notification:killi_notification_read:0;background-color:#FFE4A9' />
+	</list>
+
+	<form object="notification">
+		<notebook>
+			<page string="Informations">
+				<field readonly='1' attribute="subject" />
+				<field readonly='1' attribute="killi_priority_id" enable_link="0" />
+				<field attribute="notification_date" />
+				<message object='notification' attribute="message" css_class='fieldset notification_message' />
+			</page>
+		</notebook>
+	</form>
+
+</data>

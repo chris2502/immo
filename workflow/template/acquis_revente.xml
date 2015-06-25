@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Édition d'acquisition" />
+	<navigator object="acquisition" />
+
+	<list object="acquisition" show_wfcommentaire = "0" show_wfqualification = "0">
+		<workflow_button width="250px" string="deplacer vers la revente" destination="wfrevente.offre_revente" />
+		<field search="1" attribute="plaque_id" />
+		<field search="1" attribute="nro_id" />
+		<field search="1" attribute="date_butoir_fisc" />
+		<field search="1" attribute="surface_tiers" />
+		<field search="1" attribute="numero_rue" />
+		<field search="1" attribute="type_rue" />
+		<field search="1" attribute="nom_rue" />
+		<field search="1" attribute="code_postal" />
+		<field search="1" attribute="commune" />
+		<field search="1" attribute="plaque_id" />
+		<field search="1" attribute="nro_id" />
+		<field search="1" attribute="niveau" />
+		<field search="1" attribute="surface_brut" unit="m²" format="%0.02f"/>
+		<field search="1" attribute="surface_m_carre" unit="m²" format="%0.02f"/>
+		<field search="1" attribute="estimation_prix" unit="€" format="%0.02f"/>
+		<field search="1" attribute="moyen_marche" unit="€" format="%0.02f"/>
+		<field search="1" attribute="prix_demande" unit="€" format="%0.02f"/>
+		<field search="1" attribute="cle_acces" />
+		<field search="1" attribute="exploite" />
+		<field search="1" attribute="statut_acquisition"/>
+	</list>
+
+	<form object="acquisition">
+		<notebook>
+			<page string="Informations">
+				<group>
+					<col width="50%">
+						<field attribute="acquisition_id" />
+						<field attribute="date_butoir_fisc" />
+						<field attribute="surface_tiers" />
+					</col>
+					<col width="50%">
+						
+						<listing target="blank" object="Offre" key="offre_id" env="offre.mise_en_vente_id=miseenvente.mise_en_vente_id" data_src="offre" string="offre" create="1"  unlink="1">
+							<field search="1" attribute="montant_offre" readonly="1"/>			
+						</listing>
+						
+						<listing target="blank" object="Commentaire" key="commentaire_id" env="commentaire.mise_en_vente_id=miseenvente.mise_en_vente_id" data_src="commentaire" string="Commentaire" create="1" unlink="1">
+							<field search="1" attribute="titre_commentaire" readonly="1"/>
+							<field search="1" attribute="contenu" readonly="1"/>
+							<field search="1" attribute="etape" readonly="1"/>
+						</listing>
+						
+						<listing target="blank" object="Mandat" key="mandat_id" env="mandat.mise_en_vente_id=miseenvente.mise_en_vente_id" data_src="mandat" string="mandat" create="1"  unlink="1">
+							<field search="1" attribute="montant" readonly="1"/>
+							<field search="1" attribute="detenteur" readonly="1"/>
+							<field search="1" attribute="validite" readonly="1"/>			
+						</listing>
+					</col>
+				</group>
+			</page>
+		</notebook>
+	</form>
+	
+	
+
+</data>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../library/killi/template/validator.xsd">
+
+	<header/>
+	<menu/>
+	<title string="Type Jeton"/>
+	<navigator object="typejeton"/>
+
+	<list object="typejeton" key="type_jeton_id">
+		<field object="typejeton" attribute="name" search="1"/>
+		<field object="typejeton" attribute="url" search="1"/>
+		<field object="typejeton" attribute="object" search="1"/>
+		<field object="typejeton" attribute="method" search="1"/>
+	</list>
+
+	<create object="typejeton">
+		<notebook>
+			<page string="Informations">
+				<field object="typejeton" attribute="name"/>
+				<field object="typejeton" attribute="url"/>
+				<field object="typejeton" attribute="object"/>
+				<field object="typejeton" attribute="method"/>
+			</page>
+		</notebook>
+	</create>
+
+	<form object="typejeton">
+		<notebook>
+			<page string="Informations">
+				<field object="typejeton" attribute="name"/>
+				<field object="typejeton" attribute="url"/>
+				<field object="typejeton" attribute="object"/>
+				<field object="typejeton" attribute="method"/>
+			</page>
+		</notebook>
+	</form>
+
+</data>

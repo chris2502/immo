@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Édition de offre" />
+	<navigator object="offre" />
+
+	<list object="offre">
+		<hidden search="1" attribute="notaireCheck"/>
+		<hidden search="1" attribute="authentiqueCheck"/>
+		<field search="1" attribute="statut_acquisition"/>
+		<field search="1" attribute="local_id" />
+		<hidden search="1" attribute="mise_en_vente_id" />
+		<field search="1" attribute="montant_offre" unit="€" format="%0.02f"/>
+		<field search="1" attribute="prix_location" unit="€" format="%0.02f"/>
+		<field search="1" attribute="frai_fai" unit="€" format="%0.02f"/>
+		<field search="1" attribute="validation_commission" />
+		<field search="1" attribute="reponse_a_offre" />
+		<field search="1" attribute="date_validation_commission" />
+		<field search="1" attribute="date_retour_offre" />
+		<field search="1" attribute="date_promesse" />
+		<field search="1" attribute="surface_m_carre" unit="m²" format="%0.02f" />	
+		<field search="1" attribute="prixLocationByCarre" unit="€" format="%0.02f" />
+		<field search="1" attribute="montantOffreByCarre" unit="€" format="%0.02f" />
+	</list>
+
+	<form object="offre">
+		<notebook>
+			<page string="Informations">
+				<group>
+					<col width="25%">
+						<hidden attribute="authentiqueCheck"/>
+						<hidden attribute="notaireCheck"/>
+						<field attribute="local_id" readonly="1"/>
+						<hidden attribute="mise_en_vente_id" />
+						<field attribute="montant_offre" unit="€" format="%0.02f" id="montant_offre"/>
+						<field attribute="prix_location" unit="€" format="%0.02f" id="prix_location"/>
+						<field attribute="frai_fai" unit="€" format="%0.02f" id="frai_fai"/>
+						<field attribute="surface_m_carre" unit="m²" format="%0.02f" />	
+						<field attribute="validation_commission" />
+						<field attribute="reponse_a_offre" />
+						<field attribute="date_validation_commission" />
+						<field attribute="date_retour_offre" />
+						<field attribute="date_promesse" />
+						<field attribute="statut_acquisition"/>
+						<field attribute="statut_revente"/>
+					</col>
+				<col width="25%">			
+						<listing target="blank" object="Notaire" key="notaire_id" data_src="notaire" string="Notaire" select="1" unlink="1">
+							<field search="1" attribute="nom" readonly="1"/>
+							<field search="1" attribute="adresse" readonly="1"/>
+							<field search="1" attribute="frais" readonly="1"/>
+							<field search="1" attribute="autre_acte" readonly="1"/>			
+						</listing>
+						
+				</col>
+			</group>
+			</page>
+		</notebook>
+	</form>
+	
+	<create object="offre">
+		<notebook>
+			<page string="Informations">
+				<field search="1" attribute="local_id" readonly="1"/>
+				<hidden attribute="mise_en_vente_id" />
+				<field attribute="montant_offre" unit="€" format="%0.02f" id="montant_offre"/>
+				<field attribute="prix_location" unit="€" format="%0.02f" id="prix_location"/>
+				<field attribute="frai_fai" unit="€" format="%0.02f" id="frai_fai"/>
+				<field attribute="validation_commission" />
+				<field attribute="reponse_a_offre" />
+				<field attribute="date_validation_commission" />
+				<field attribute="date_retour_offre" />
+				<field attribute="date_promesse" />
+			</page>
+		</notebook>
+	</create>
+	
+
+</data>

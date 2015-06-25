@@ -1,0 +1,15 @@
+{
+    "require": {
+        "psr/log": "~1.0",
+        "phpmailer/phpmailer": "~5.2",
+        "wikimedia/composer-merge-plugin": "dev-master"
+    },
+    "extra": {
+        "merge-plugin": {
+            "include": [
+                "composer.local.json",
+                "extensions/*/composer.json"
+            ]
+        }
+    }
+}

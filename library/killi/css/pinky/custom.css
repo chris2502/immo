@@ -1,0 +1,41 @@
+.table_list > tbody tr:nth-child(even) {
+        background-color: #FDF6FA;
+}
+
+.ui-button .ui-button-text {
+        font-weight: bold;
+}
+
+.ui-tabs-anchor,
+.ui-menu .ui-menu-item a,
+.ui-menu .ui-menu-item a.ui-state-focus,
+.ui-menu .ui-menu-item a.ui-state-active,
+.ui-menu .ui-state-disabled {
+        font-weight: bold;
+}
+
+button {
+        border: 1px solid #fd77d2;
+        background: #fdb4dd url(images/ui-bg_highlight-soft_65_fdb4dd_1x100.png) 50% 50% repeat-x;
+        font-weight: bold;
+        color: #242324;
+}
+
+a {
+        color: #f400d4;
+}
+
+.ui-widget-content {
+        color: #0E62C0;
+}
+
+.ui-widget-content a {
+        color: #f400d4;
+}
+
+.table_list > tbody > tr:hover > td,
+.table_list > tbody > tr.even:hover > td,
+.table_list > tbody > tr.odd:hover > td
+{
+        background: none repeat scroll 0 0 #fcd9ee !important;
+}

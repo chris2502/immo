@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+
+	<title string="Gestion des noeuds de workflow" />
+	<navigator object="node" />
+
+	<list object="node">
+		<field search="0" attribute="workflow_node_id" selector="1" />
+		<field search="1" attribute="workflow_id" selector="1" />
+		<field search="1" attribute="etat" />
+		<field search="1" attribute="node_name" />
+		<field attribute="type_id" selector="1" search="1" />
+		<field search="1" attribute="killi_workflow_node_group_id" />
+		<field search="1" attribute="ordre" />
+		<field search="1" attribute="object" />
+		<field attribute="commande" />
+		<field attribute="population" />
+	</list>
+
+	<form object="node">
+		<notebook>
+			<page string="Informations">
+				<group>
+					<col width="50%">
+						<field attribute="etat" />
+						<field attribute="workflow_id" selector="1" />
+						<field attribute="type_id" selector="1" />
+						<field attribute="object" />
+						<field attribute="commande" />
+						<field attribute="interface" />
+						<field attribute="ordre" />
+						<field attribute="node_name" />
+						<field attribute="killi_workflow_node_group_id" />
+					</col>
+					<col width="50%">
+						<listing object="nodequalification" data_src="nodequalification" create="1" unlink="1" env="node_id=node.workflow_node_id">
+							<field attribute="nom" readonly="1" />
+						</listing>
+					</col>
+				</group>
+			</page>
+		</notebook>
+	</form>
+
+	<create object="node">
+		<notebook>
+			<page string="Nouveau noeud">
+				<field attribute="etat" />
+				<field attribute="workflow_id" selector="1" />
+				<field attribute="type_id" selector="1" />
+				<field attribute="commande" />
+				<field attribute="interface" />
+				<field attribute="object" />
+				<field attribute="ordre" />
+				<field attribute="node_name" />
+				<field attribute="killi_workflow_node_group_id" />
+			</page>
+		</notebook>
+	</create>
+
+</data>

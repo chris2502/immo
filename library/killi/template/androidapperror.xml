@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+
+   <header/>
+   <menu/>
+   <title string="Android Throwable Error"/>
+   <navigator object="androidapperror"/>
+
+   <list object="androidapperror" key="android_app_error_id">
+	  <!-- <button confirm="Vous êtes sur le point de supprimer les enregistrements sélectionnés. Voulez-vous continuer ?" string="Supprimer la sélection" action="androidapperror.unlinkSelected" width="150px" icon="delete"/> -->
+	  <button string="Supprimer la sélection !" action="androidapperror.unlinkSelected" width="250px"/>
+	  <field object="androidapperror" attribute="date_err_client" format="Y-m-d H:i:s"  search="1" />
+	  <field object="androidapperror" attribute="date_err_server" format="Y-m-d H:i:s" search="1" />
+	  <field object="androidapperror" attribute="app_name" search="1" />
+	  <field object="androidapperror" attribute="device_data" search="1" />
+	  <field object="androidapperror" attribute="err_type" search="1" />
+	  <field object="androidapperror" attribute="err_cause_text" search="1" />
+	  <field object="androidapperror" attribute="err_msg_text" search="1" />
+	  <field object="androidapperror" attribute="err_backtrace_text" search="1" />
+	  <field object="androidapperror" attribute="alert_is_sended" search="1" />
+	  
+   </list>
+
+   <create object="androidapperror" action="androidapperror.create">
+	  <field object="androidapperror" attribute="date_err_client" format="Y-m-d H:i:s"  />
+	  <field object="androidapperror" attribute="date_err_server" format="Y-m-d H:i:s"  />
+	  <field object="androidapperror" attribute="app_name" />
+	  <field object="androidapperror" attribute="device_data" />
+	  <field object="androidapperror" attribute="err_type" />
+	  <field object="androidapperror" attribute="err_cause" />
+	  <field object="androidapperror" attribute="err_msg" />
+	  <field object="androidapperror" attribute="err_backtrace" />
+	  <field object="androidapperror" attribute="alert_is_sended" />
+   </create>
+   
+   <form object="androidapperror">
+       <notebook>
+	      <page string="Erreur Android">
+			  <field object="androidapperror" attribute="date_err_client" format="Y-m-d H:i:s" readonly="1" />
+			  <field object="androidapperror" attribute="date_err_server" format="Y-m-d H:i:s" readonly="1" />
+			  <field object="androidapperror" attribute="app_name" readonly="1" />
+			  <field object="androidapperror" attribute="device_data" readonly="1" />
+			  <field object="androidapperror" attribute="err_type" readonly="1" />
+			  <field object="androidapperror" attribute="err_cause" readonly="1" />
+			  <field object="androidapperror" attribute="err_msg" readonly="1" />
+			  <field object="androidapperror" attribute="err_backtrace" readonly="1" />
+			  <field object="androidapperror" attribute="alert_is_sended" readonly="1" />
+	      </page>
+       </notebook>
+   </form>
+   
+</data>

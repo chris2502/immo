@@ -1,0 +1,67 @@
+{
+	"structure": [
+		{
+			"row1": [
+				{
+					"col1": [
+						{
+							"1": "title"
+						}
+					]
+				}
+			],
+			"row2" : [
+				{
+					"col2": [
+						{
+							"1": "contact/firstname",
+							"2": "contact/lastname",
+						}
+					],
+					"col3": [
+						{
+							"1": "contact/birthdate"
+						}
+					]
+				}
+			]
+		}
+	],
+	"fields": [
+		{
+			"contact/firstname": [
+				{
+					"type": "text",
+					"label": "Quel est votre prénom ?",
+					"placeholder": "Entrez ici votre prénom"
+				}
+			]
+		},
+		{
+			"contact/lastname": [
+				{
+					"type": "text",
+					"label": "Quel est votre nom ?",
+					"placeholder": "Entrez ici votre nom"
+				}
+			]
+		},
+		{
+			"title": [
+				{
+					"type": "title",
+					"label": "Ajout d'un contact",
+				}
+			]
+		},
+		{
+			"contact/birthdate": [
+				{
+					"type": "date",
+					"label": "Quel est votre date de naissance ?",
+					"placeholder": "Entrez ici votre date de naissance"
+				}
+			]
+		}
+	]
+}

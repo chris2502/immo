@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Édition de commentaire" />
+	<navigator object="commentaire" />
+
+	<list object="commentaire">
+		<button width="250px" string="Retour à Saisie initiale" action="local.edit&amp;crypt/workflow_node_id=VQ__"/>
+		<field search="1" attribute="titre_commentaire" />
+		<field search="1" attribute="contenu" />
+		<field search="1" attribute="date_commentaire" />
+		<field search="1" attribute="etape" />
+		<field search="1" attribute="rappel" />
+		<field search="1" attribute="date_rappel" />
+		<field search="1" attribute="local_id" />
+		<field search="1" attribute="mise_en_vente_id" />
+		<field attribute="statut_acquisition" />	
+	</list>
+
+	<form object="commentaire">
+		<notebook>
+			<page string="Informations">
+				
+				<field attribute="titre_commentaire" />
+				<field attribute="contenu" />
+				<field attribute="date_commentaire" readonly="1"/>
+				<field attribute="rappel" />
+				<field attribute="date_rappel" />
+				<field attribute="local_id" readonly="1"/>
+				<field attribute="mise_en_vente_id" />
+				<field attribute="statut_acquisition" />
+			</page>
+		</notebook>
+	</form>
+	
+	<create object="commentaire">
+		<notebook>
+			<page string="Informations">
+				<field attribute="titre_commentaire" />
+				<field attribute="contenu" />
+				<!-- <field attribute="date_commentaire"/> -->
+				<!-- <field attribute="etape"/> -->
+				<field attribute="rappel" />
+				<field attribute="date_rappel" />
+				<field attribute="local_id" readonly="1"/>
+				<field attribute="mise_en_vente_id" readonly="1" />
+			</page>
+		</notebook>
+	</create>
+	
+
+</data>

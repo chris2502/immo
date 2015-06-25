@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Édition de Plaque" />
+	<navigator object="plaque" />
+
+	<list object="plaque">
+		<field search='1' attribute="libelle_plaque" />
+
+		
+	</list>
+
+	<form object="plaque">
+		<notebook>
+			<page string="Informations">
+				<field attribute="libelle_plaque" />
+				
+			</page>
+		</notebook>
+	</form>
+	
+	<create object="plaque">
+		<notebook>
+			<page string="Informations">
+				<field attribute="libelle_plaque" />
+				
+			</page>
+		</notebook>
+	</create>
+	
+
+</data>

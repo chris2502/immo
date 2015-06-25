@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+
+	<title string="Gestion des groupes de noeuds de workflow" />
+	<navigator object="nodegroup" />
+
+	<list object="nodegroup">
+		<field search="1" attribute="name" />
+		<field search="1" attribute="color" />
+	</list>
+
+	<form object="nodegroup">
+		<notebook>
+			<page string="Informations">
+				<field attribute="name" />
+				<field attribute="color" />
+			</page>
+		</notebook>
+	</form>
+
+	<create object="nodegroup">
+		<notebook>
+			<page string="Nouveau groupe de noeud">
+				<field attribute="name" />
+				<field attribute="color" />
+			</page>
+		</notebook>
+	</create>
+
+</data>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+
+	<form action="user.submitAuthentification" object="user">
+
+		<newline />
+		<newline />
+		<newline />
+		<newline />
+		<newline />
+		<newline />
+		<group>
+			<col></col>
+			<col css_class="login-box">
+				<notebook>
+					<page string="Authentification">
+						<field attribute="login" />
+						<field attribute="password" />
+						<newline />
+						<submit string="Se connecter" />
+					</page>
+				</notebook>
+			</col>
+			<col></col>
+		</group>
+	</form>
+</data>

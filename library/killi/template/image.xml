@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../library/killi/template/validator.xsd">
+
+    <header/>
+    <menu/>    
+    <title string="Edition des Images"/>
+    <navigator object="image"/>
+    
+    <list object="image" key="document_id">
+    	<!--  <field attribute="document_id"/> -->
+      	<field attribute="hr_name" search="1"/>
+      	<field attribute="file_name" search="1"/>
+	    <field attribute="object_link" search="0" />
+	    <field attribute="mime_type" search="1"/>
+		<field attribute="document_type_id" search="1"/>
+	    <field attribute="users_id" search="1"/>
+      	<field attribute="file_found" search="1" />
+	</list>
+    
+    <form object="image">
+        <notebook>
+            <page string="Image">
+                <group>
+                	<col>
+			      		<field attribute="hr_name"/>
+			      		<field attribute="mime_type"/>
+			      		<field attribute="document_type_id"/>
+			      		<field attribute="label" label="Légende/Titre (court)" />
+			      		<field attribute="comment" label="Commentaire (long)" />
+			      	</col>
+                	<col>
+			      		<field attribute="date_creation"/>
+			      		<field attribute="users_id"/>
+			      		<field attribute="object_link"/>
+			      		<field attribute="file_found" />
+                	</col>
+                </group>
+                <!-- Affichage de l'image soit avec annotations, soit seule. RenderCondition pour rétrocompatibilité -->
+                <image_annotation attribute="annotations" render_condition="is_array({image/annotations})" />
+                <img src="file_name" type="image" width="75%" render_condition="is_null({image/annotations})"/>
+            </page>
+        </notebook>
+    </form>
+    
+</data>

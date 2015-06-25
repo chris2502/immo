@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+
+	<title string="[%title.subtitle]" />
+	<navigator object="workflow" edit='0' save='0' unlink="0" />
+
+	<list object="workflow">
+		<field search="1" attribute="nom" />
+	</list>
+
+	<form object="workflow">
+		<img src="graphviz_schema" />
+	</form>
+
+	<create object="workflow">
+		<notebook>
+			<page string="Nouveau workflow">
+				<field attribute="nom" />
+				<field attribute="workflow_name" />
+			</page>
+		</notebook>
+	</create>
+
+</data>

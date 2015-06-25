@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Édition de responsable" />
+	<navigator object="responsable" />
+
+	<list object="responsable">
+		<field search="1" attribute="nom_resp" />
+		<field search="1" attribute="type" />
+		<field search="1" attribute="mdp" />
+	</list>
+
+	<form object="responsable">
+		<notebook>
+			<page string="Informations">
+				<field attribute="nom_resp" />
+				<field attribute="type" />
+				<field attribute="mdp" />
+			</page>
+		</notebook>
+	</form>
+	
+	<create object="responsable">
+		<notebook>
+			<page string="Informations">
+				<field attribute="nom_resp" />
+				<field attribute="type" />
+				<field attribute="mdp" />
+			</page>
+		</notebook>
+	</create>
+	
+
+</data>

@@ -1,0 +1,83 @@
+/* Killi */
+input,textarea,select,button,.title,.separator {
+	border-color: #d49768 !important;
+}
+
+.table_list > tbody tr:nth-child(even) {
+	background-color: #f4f0ec;
+}
+
+.table_list>tbody>tr:hover>td,.table_list>tbody>tr.even:hover>td,.table_list>tbody>tr.odd:hover>td
+	{
+	background-color: #FFE4A9 !important;
+}
+
+/* enabled buttons */
+button, input[type='button'], input[type='submit'], select
+{
+	background-image: -webkit-gradient(linear, center top, center bottom, color-stop(31%, #feebdc), color-stop(70%, #fcd4b6));
+	background-image: -webkit-linear-gradient(top, #feebdc 31%, #fcd4b6 70%);
+	background-image: -moz-linear-gradient(top, #feebdc 31%, #fcd4b6 70%);
+	background-image: -ms-linear-gradient(top, #feebdc 31%, #fcd4b6 70%);
+	background-image: -o-linear-gradient(top, #feebdc 31%, #fcd4b6 70%);
+	background-image: linear-gradient(to bottom, #feebdc 31%, #fcd4b6 70%);
+}
+
+/* enabled inputs */
+input[type='text'], input[type='password'], textarea
+{
+	background-image: -webkit-gradient(linear, center bottom, center top, color-stop(56%, #feebdc), color-stop(96%, #fcd4b6));
+	background-image: -webkit-linear-gradient(bottom, #feebdc 56%, #fcd4b6 96%);
+	background-image: -moz-linear-gradient(bottom, #feebdc 56%, #fcd4b6 96%);
+	background-image: -ms-linear-gradient(bottom, #feebdc 56%, #fcd4b6 96%);
+	background-image: -o-linear-gradient(bottom, #feebdc 56%, #fcd4b6 96%);
+	background-image: linear-gradient(to top, #feebdc 56%, #fcd4b6 96%);
+}
+
+/* disabled inputs */
+input:disabled, textarea:disabled
+{
+	background-image: -webkit-linear-gradient(#E0E0E0, #F5F5F5 38%, #FFF) !important;
+	background-image: -moz-linear-gradient(#E0E0E0, #F5F5F5 38%, #FFF) !important;
+}
+
+/* disabled buttons */
+button:disabled, input[type='button']:disabled, input[type='submit']:disabled, select:disabled
+{
+	background-image: -webkit-linear-gradient(#FFF, #EFF5FF 38%, #D3E5FF) !important;
+	background-image: -moz-linear-gradient(#FFF, #EFF5FF 38%, #D3E5FF) !important;
+}
+
+.ui-menubar .ui-icon {
+	background-image: url(images/ui-icons_f35f07_256x240.png) !important;
+}
+
+.ui-menubar .ui-button {
+	font-weight: bold !important;
+}
+
+.ui-menu .ui-menu-item a {
+	color: #222 !important;
+}
+
+th.leftcorner {
+	background-color: #d9bb73 !important;
+}
+
+.listing_table,.box_header,.box_container {
+	border-color: #d49768 !important;
+}
+
+/* required inputs */
+input.required_field, textarea.required_field, div.required_field input, div.required_field textarea
+{
+	background-image: -webkit-linear-gradient(#FFDD84, #FFEDDA 38%, #FFF0CA) !important;
+	background-image: -moz-linear-gradient(#FFDD84, #FFEDDA 38%, #FFF0CA) !important;
+}
+
+/* required forms */
+select.required_field, div.required_field select
+{
+	background-image: -webkit-linear-gradient(#FFF0CA, #FFEDDA 38%, #FFDD84) !important;
+	background-image: -moz-linear-gradient(#FFF0CA, #FFEDDA 38%, #FFDD84) !important;
+}

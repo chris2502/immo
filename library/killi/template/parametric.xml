@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+
+	<title string="Gestion des paramètres généraux" />
+	<navigator object="parametric" />
+
+	<list object="parametric">
+		<field search="1" attribute="parametric_name" />
+		<field search="1" attribute="parametric_type_id" />
+		<field search="1" attribute="parametric_datatype" />
+		<field search="1" attribute="parametric_value" />
+	</list>
+
+	<form object="parametric">
+		<key object="parametric" attribute="parametric_id" />
+		<field attribute="parametric_name" />
+		<field attribute="parametric_description" />
+		<field attribute="parametric_type_id" />
+		<field attribute="parametric_datatype" />
+		<field attribute="parametric_value" />
+	</form>
+
+	<create object="parametric">
+		<notebook>
+			<page string="Nouveau paramètre">
+				<field attribute="parametric_name" />
+				<field attribute="parametric_description" />
+				<field attribute="parametric_type_id" />
+				<field attribute="parametric_datatype" />
+				<field attribute="parametric_value" />
+			</page>
+		</notebook>
+	</create>
+
+</data>

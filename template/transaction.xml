@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Édition d'acquisition" />
+	<navigator object="transaction" />
+
+	<list object="transaction">
+		<field search="1" attribute="type_transaction" />
+	</list>
+
+	<form object="transaction">
+		<notebook>
+			<page string="Informations">
+				<field attribute="type_transaction" />
+			</page>
+		</notebook>
+	</form>
+	
+	<create object="transaction">
+		<notebook>
+			<page string="Informations">
+				<field attribute="type_transaction" />
+			</page>
+		</notebook>
+	</create>
+	
+
+</data>

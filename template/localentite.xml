@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Édition de localentite" />
+	<navigator object="localentite" />
+
+	<list object="localentite">
+		<field search="1" attribute="local_id" />
+		<field search="1" attribute="numero_rue" />
+		<field search="1" attribute="type_rue" />
+		<field search="1" attribute="niveau" />
+		<field search="1" attribute="code_postal" />
+		<field search="1" attribute="commune" />
+		<field search="1" attribute="entite_id" />
+		<field search="1" attribute="type" />
+		<field search="1" attribute="statut_acquisition" />
+	</list>
+
+	<form object="localentite">
+		<notebook>
+			<page string="Informations">
+				<field attribute="local_id" />
+				<field attribute="entite_id" />
+			</page>
+		</notebook>
+	</form>
+	
+	<create object="localentite">
+		<notebook>
+			<page string="Informations">
+				<field search="1" attribute="local_id" />
+				<field search="1" attribute="entite_id" />
+			</page>
+		</notebook>
+	</create>
+	
+
+</data>

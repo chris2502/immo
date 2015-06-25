@@ -1,0 +1,14 @@
+/* tables */
+table.tablesorter thead tr .tablesorter_header {
+	background-image: url(../../images/tablesorter/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+	padding-right:18px;
+}
+table.tablesorter thead tr .tablesorter_headerSortUp {
+	background-image: url(../../images/tablesorter/asc.gif);
+}
+table.tablesorter thead tr .tablesorter_headerSortDown {
+	background-image: url(../../images/tablesorter/desc.gif);
+}

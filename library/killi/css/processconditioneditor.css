@@ -1,0 +1,129 @@
+
+.moduleConditionEditor .add_output button {
+	width: 20px;
+}
+
+.moduleConditionEditor .formula {
+	min-height: 50px;
+	margin-bottom: 15px;
+	background-color: #fff;
+	border: 1px dotted #AAA;
+}
+
+.moduleConditionEditor .formula .operator {
+	border-radius: 100%;
+	font-size: 12px;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+}
+
+.moduleConditionEditor .formula .variable {
+	border-radius: 10%;
+	background-color: #99E;
+}
+
+.moduleConditionEditor .formula ul {
+	list-style-type: none;
+}
+
+.moduleConditionEditor .formula ul li {
+	padding: 5px;
+	margin: 5px;
+	min-height: 20px;
+	border: 1px dotted #666;
+	float: left;
+	line-height: 20px;
+}
+
+.moduleConditionEditor .formula ul:after {
+	clear: both;
+	content: " ";
+}
+
+.moduleConditionEditor .formula .selected {
+	background-color: #CCC;
+}
+
+/**
+ * Toolbar menu
+ */
+.moduleConditionEditor .toolbar {
+	margin-top: 5px;
+}
+
+/* Dropdown */
+.moduleConditionEditor .toolbar ul ul {
+	display: none;
+}
+
+.moduleConditionEditor .toolbar ul li:hover > ul {
+	display: block;
+	overflow: auto;
+	max-height: 200px;
+}
+
+.moduleConditionEditor .toolbar ul {
+	min-width: 400px;
+	padding: 0 10px;
+	border-radius: 5px;
+	list-style: none;
+	position: relative;
+	display: inline-block;
+	background: linear-gradient(top, #efefef 0%, #bbb 100%);
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+}
+
+.moduleConditionEditor .toolbar ul li {
+	float: left;
+	position: relative;
+	background-color: #FFF;
+}
+
+.moduleConditionEditor .toolbar ul li ul {
+	position: absolute;
+	top: 22px;
+	left: 0px;
+	z-index: 99;
+}
+
+.moduleConditionEditor .toolbar ul li a {
+	padding: 5px 10px 5px 10px;
+	display: block;
+	color: #757575;
+}
+
+.moduleConditionEditor .toolbar ul li:hover {
+	background: #4b545f;
+}
+
+.moduleConditionEditor .toolbar ul li:hover a {
+	color: #fff;
+}
+
+.moduleConditionEditor .toolbar ul li:hover > ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+.moduleConditionEditor .toolbar ul li:hover > ul li {
+	float: none;
+	display: block;
+}
+
+.moduleConditionEditor .toolbar ul li:hover > ul li a {
+	color: #666;
+	min-width: 150px;
+}
+
+.moduleConditionEditor .toolbar ul li:hover > ul li a:hover {
+	color: #fff;
+}
+
+.moduleConditionEditor .toolbar button {
+	width: auto;
+	min-width: 20px;
+	min-height: 20px;
+	padding: 2px;
+	margin: 1px 0;
+}

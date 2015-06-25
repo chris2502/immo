@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Édition de Effectuer" />
+	<navigator object="typetravaux" />
+
+	<list object="typetravaux">
+		<field search="1" attribute="type" />
+	</list>
+
+	<form object="typetravaux">
+		<notebook>
+			<page string="Informations">
+				<field search="1" attribute="type" />
+			</page>
+		</notebook>
+	</form>
+	
+	<create object="typetravaux">
+		<notebook>
+			<page string="Informations">
+				<field search="1" attribute="type" />
+			</page>
+		</notebook>
+	</create>
+</data>

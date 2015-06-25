@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Édition de localresponsable" />
+	<navigator object="localresponsable" />
+
+	<list object="localresponsable">
+		<field search="1" attribute="local_id" />
+		<field search="1" attribute="responsable_id" />
+	</list>
+
+	<form object="localresponsable">
+		<notebook>
+			<page string="Informations">
+				<field attribute="local_id" />
+				<field attribute="responsable_id" />
+			</page>
+		</notebook>
+	</form>
+	
+	<create object="localresponsable">
+		<notebook>
+			<page string="Informations">
+				<field search="1" attribute="local_id" />
+				<field search="1" attribute="responsable_id" />
+			</page>
+		</notebook>
+	</create>
+	
+
+</data>

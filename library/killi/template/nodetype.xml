@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+
+	<title string="Gestion des types de noeud" />
+	<navigator object="nodetype" edit='0' save='0' unlink='0' />
+
+	<list object="nodetype">
+		<field search="1" attribute="nom" />
+	</list>
+
+	<form object="nodetype">
+		<notebook>
+			<page string="Informations">
+				<field attribute="nom" readonly='1' />
+			</page>
+		</notebook>
+	</form>
+
+</data>

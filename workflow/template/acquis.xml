@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Édition d'acquisition" />
+	<navigator object="acquisition" />
+
+	<list object="acquisition" show_wfcommentaire = "0" show_wfqualification = "0">
+		<field search="1" attribute="plaque_id" />
+		<field search="1" attribute="nro_id" />
+		<field search="1" attribute="adresse" />
+		<field search="1" attribute="plaque_id" />
+		<field search="1" attribute="nro_id" />
+		<field search="1" attribute="niveau" />
+		<field search="1" attribute="date_butoir_fisc" />
+		<field search="1" attribute="surface_tiers" unit="m²" format="%0.02f" />
+		<field search="1" attribute="surface_brut" unit="m²" format="%0.02f"/>
+		<field search="1" attribute="surface_m_carre" unit="m²" format="%0.02f"/>
+		<field search="1" attribute="estimation_prix" unit="€" format="%0.02f"/>
+		<field search="1" attribute="moyen_marche" unit="€" format="%0.02f"/>
+		<field search="1" attribute="prix_demande" unit="€" format="%0.02f"/>
+		<field search="1" attribute="cle_acces" />
+		<field search="1" attribute="exploite" />
+		<field search="1" attribute="statut_acquisition"/>
+	</list>
+
+	<form object="acquisition">
+		<notebook>
+			<page string="Informations">
+				<field attribute="acquisition_id" />
+				<field attribute="date_butoir_fisc" />
+				<field attribute="surface_tiers" />
+			</page>
+		</notebook>
+	</form>
+	
+	
+
+</data>

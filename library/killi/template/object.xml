@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+
+	<title string="Gestion des droits sur les Objets" />
+	<navigator object="object" search='0' create='0' unlink='0' />
+
+	<form object="object">
+
+		<hidden object="object" attribute="nom" />
+		<hidden object="profil" attribute="killi_profil_id" />
+
+		<separator string="Droits sur les attributs de l'objet [%profil.current_object] (pour profil [%profil.nom])" />
+
+		<listing data_src="object.getAttributeList" object="attribute" edit='0'>
+			<field attribute="attr_name" enable_link="0" />
+			<field attribute="nom" readonly="1" />
+			<field attribute="type" readonly="1" />
+			<field attribute="required" readonly="1" />
+			<field attribute="read" />
+			<field attribute="write" />
+		</listing>
+
+	</form>
+
+</data>
+

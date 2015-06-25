@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Édition des utilisateurs" />
+	<navigator object="user" />
+
+	<list object="user" export="1">
+		<field search="1" attribute="nom" />
+		<field search="1" attribute="prenom" />
+		<field search="1" attribute="login" />
+		<field search="1" attribute="mail" />
+		<field search="1" attribute="profil_id" display_value="1" />
+		<field search="1" attribute="actif" />
+		<field search="1" attribute="last_connection" />
+		<field search="1" attribute="creation_date" />
+	</list>
+
+	<form object="user">
+		<notebook>
+			<page string="Informations">
+				<group>
+					<col width="50%">
+						<field attribute="nom" />
+						<field attribute="prenom" />
+						<field attribute="actif" />
+						<field attribute="certificat_duree" unit="jours" />
+						<field attribute="mail" />
+						<field attribute="login" />
+						<field attribute="password" />
+						<field attribute="last_connection" />
+						<field attribute="creation_date" />
+						<newline />
+						<separator string="Actions" width='40%' />
+						<newline />
+						<url href="index.php?action=user.connectas" string="Se connecter en tant que..." />
+						<space height="10"/>
+						<url href="index.php?action=user.sendtestemail" string="Envoyer un email de test" />
+					</col>
+					<col width="50%">
+						<listing object="profil" data_src="user.getProfilList" string="Liste des profils" select="1" unlink="1">
+							<field readonly="1" attribute="nom" />
+						</listing>
+					</col>
+				</group>
+			</page>
+		</notebook>
+	</form>
+
+	<create object="user">
+		<notebook>
+			<page string="Nouvel utilisateur">
+				<field attribute="nom" />
+				<field attribute="prenom" />
+				<field attribute="login" />
+				<field attribute="mail" />
+				<field attribute="actif" />
+				<field attribute="certificat_duree" unit="jours" />
+			</page>
+		</notebook>
+	</create>
+
+</data>

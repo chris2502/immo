@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Revendu" />
+	<navigator object="miseenvente" />
+
+	<list object="miseenvente" show_wfcommentaire = "0" show_wfqualification = "0">
+		<field search="1" attribute="plaque_id" />
+		<field search="1" attribute="nro_id" />
+		<field search="1" attribute="adresse" />
+		<field search="1" attribute="type_surface" />
+		<field search="1" attribute="surface_brute" />
+		<field search="1" attribute="surface_m_carre" />
+		<field search="1" attribute="estimation_bien" />
+		<field search="1" attribute="estimation_valide_ci" />
+		<field search="1" attribute="prix_rentabilite" />
+		<field search="1" attribute="estimation_prix" />
+		<field search="1" attribute="moyen_marche" />
+		<field search="1" attribute="prix_demande" />
+		<field search="1" attribute="cle_acces" />
+		<field search="1" attribute="porte_anti_squat" />
+		<field search="1" attribute="alarme_surface" />
+		<field search="1" attribute="niveau" />
+		<field search="1" attribute="statut_revente"/>
+	</list>	
+
+</data>

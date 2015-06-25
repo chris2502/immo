@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Édition des NRO" />
+	<navigator object="nro" />
+
+	<list object="nro">
+		<field search="1" attribute="trigramme" />
+		<field search="1" attribute="surface_nro" />
+		<field search="1" attribute="estimation_prix" />
+		<field search="1" attribute="prix_nro" />
+	</list>
+
+	<form object="nro">
+		<notebook>
+			<page string="Informations">
+				<field attribute="trigramme" />
+				<field attribute="surface_nro" />
+				<field attribute="estimation_prix" />
+				<field attribute="prix_nro" />
+			</page>
+		</notebook>
+	</form>
+	
+	
+	<create object="nro">
+		<notebook>
+			<page string="Informations">
+				<field attribute="trigramme" />
+				<field attribute="surface_nro" />
+				<field attribute="estimation_prix" />
+				<field attribute="prix_nro" />
+			</page>
+		</notebook>
+	</create>
+
+</data>

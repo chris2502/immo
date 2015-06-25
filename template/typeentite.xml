@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Édition du type d'entite" />
+	<navigator object="typeentite" />
+
+	<list object="typeentite">
+		<field search="1" attribute="type_entite_nom" />
+	</list>
+
+	<form object="typeentite">
+		<notebook>
+			<page string="Informations">
+				<field attribute="type_entite_nom" id="typeentite"/>
+			</page>
+		</notebook>
+	</form>
+	
+	<create object="typeentite">
+		<notebook>
+			<page string="Informations">
+				<field attribute="type_entite_nom" id="typeentite"/>
+			</page>
+		</notebook>
+	</create>
+	
+
+</data>

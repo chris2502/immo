@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Édition de localabst" />
+	<navigator object="localabst" />
+
+	<list object="localabst">
+		<field search="1" attribute="departement" />
+		<field search="1" attribute="numero_rue" />
+		<field search="1" attribute="type_rue" />
+		<field search="1" attribute="nom_rue" />
+		<field search="1" attribute="code_postal" />
+		<field search="1" attribute="niveau" />
+		<field search="1" attribute="surface_brut" />
+		<field search="1" attribute="surface_m_carre" unit="m2" format="%0.02f"/>
+		<field search="1" attribute="estimation_prix" />
+		<field search="1" attribute="moyen_marche" />
+		<field search="1" attribute="prix_demande" />
+		<field search="1" attribute="cle_acces" />
+		<field search="1" attribute="exploite" />
+		<field search="1" attribute="commentaire" />
+		<field search="1" attribute="plaque_id" />
+		<field search="1" attribute="nro_id" />
+		<field search="1" attribute="prix_nro" />
+		
+	</list>
+
+	<form object="localabst">
+		<notebook>
+			<page string="Informations">
+				<field attribute="departement" />
+				<field attribute="numero_rue" />
+				<field attribute="type_rue" />
+				<field attribute="nom_rue" />
+				<field attribute="code_postal" />
+				<field attribute="niveau" />
+				<field attribute="surface_brut" />
+				<field attribute="surface_m_carre" />
+				<field attribute="estimation_prix" />
+				<field attribute="moyen_marche" />
+				<field attribute="prix_demande" />
+				<field attribute="cle_acces" />
+				<field attribute="exploite" />
+				<field attribute="commentaire" />
+				<field attribute="plaque_id" />
+			</page>
+		</notebook>
+	</form>
+	
+	<create object="localabst">
+		<notebook>
+			<page string="Informations">
+				<field attribute="departement" />
+				<field attribute="numero_rue" />
+				<field attribute="type_rue" />
+				<field attribute="nom_rue" />
+				<field attribute="code_postal" />
+				<field attribute="niveau" />
+				<field attribute="surface_brut" />
+				<field attribute="surface_m_carre" />
+				<field attribute="estimation_prix" />
+				<field attribute="moyen_marche" />
+				<field attribute="prix_demande" />
+				<field attribute="cle_acces" />
+				<field attribute="exploite" />
+				<field attribute="commentaire" />
+				<field attribute="plaque_id" />
+				
+			</page>
+		</notebook>
+	</create>
+	
+
+</data>

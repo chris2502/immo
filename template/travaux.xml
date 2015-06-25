@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Édition de Travaux" />
+	<navigator object="travaux" />
+
+	<list object="travaux">
+		<field search="1" attribute="typeTravaux_id" />
+		<field search="1" attribute="local_id" />
+		
+		<field search="1" attribute="projection_travaux" />
+		<field search="1" attribute="description_travaux" />
+		<field search="1" attribute="date_debut_travaux" />
+		<field search="1" attribute="date_fin_travaux" />
+		<field search="1" attribute="statut_acquisition" />
+		<field search="1" attribute="mise_en_vente_id" />
+	</list>
+
+	<form object="travaux">
+		<notebook>
+			<page string="Informations">
+				<field attribute="typeTravaux_id" />
+				<field attribute="local_id" readonly="1"/>
+				
+				<field attribute="projection_travaux" />
+				<field attribute="description_travaux" />
+				<field attribute="date_debut_travaux" />
+				<field attribute="date_fin_travaux" />
+				<field attribute="mise_en_vente_id" />
+				<field attribute="statut_acquisition" />
+			</page>
+		</notebook>
+	</form>
+	
+	<create object="travaux">
+		<notebook>
+			<page string="Informations">
+				<field attribute="typeTravaux_id" />
+				<field attribute="local_id" readonly="1"/>
+				
+				<field attribute="projection_travaux" />
+				<field attribute="description_travaux" />
+				<field attribute="date_debut_travaux" />
+				<field attribute="date_fin_travaux" />
+				<field attribute="mise_en_vente_id" />
+				<field attribute="statut_acquisition" />
+			</page>
+		</notebook>
+	</create>
+</data>

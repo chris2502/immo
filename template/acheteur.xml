@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Édition de acheteur" />
+	<navigator object="acheteur" />
+
+	<list object="acheteur">
+		<field search="1" attribute="code_acheteur" />
+		<field search="1" attribute="leve" />
+	</list>
+
+	<form object="acheteur">
+		<notebook>
+			<page string="Informations">
+				<field attribute="code_acheteur" />
+				<field attribute="leve" />
+			</page>
+		</notebook>
+	</form>
+	
+	<create object="acheteur">
+		<notebook>
+			<page string="Informations">
+				<field attribute="code_acheteur" />
+				<field attribute="leve" />
+			</page>
+		</notebook>
+	</create>
+	
+
+</data>

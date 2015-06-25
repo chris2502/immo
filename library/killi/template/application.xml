@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+
+	<title string="Gestion des autorisations des applications tierces" />
+	<navigator object="application" />
+
+	<list object="application">
+		<field search="1" attribute="nom" />
+		<field search="1" attribute="app_token" />
+		<field search="1" attribute="app_secret" />
+		<field search="1" attribute="redirect_uri" />
+		<field search="1" attribute="active" />
+	</list>
+
+	<form object="application">
+		<notebook>
+			<page string="Informations">
+				<field attribute="nom" />
+				<field attribute="app_token" />
+				<field attribute="app_secret" />
+				<field attribute="redirect_uri" />
+				<field attribute="active" />
+			</page>
+		</notebook>
+	</form>
+
+	<create object="application">
+		<notebook>
+			<page string="Authorisation une application">
+				<field attribute="nom" />
+				<field attribute="app_token" />
+				<field attribute="app_secret" />
+				<field attribute="redirect_uri" />
+				<field attribute="active" />
+			</page>
+		</notebook>
+	</create>
+
+</data>

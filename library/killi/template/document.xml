@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Base documentaire" />
+	<navigator object="document" create="1" />
+	<list object="document" export='1'>
+		<field object="document" search="1" attribute="hr_name" />
+		<field object="document" search="1" attribute="document_type_id" selector='1' />
+		<field object="document" search="1" attribute="date_creation" />
+		<field object="document" search="1" attribute="object_link" />
+		<field object="document" search="1" attribute="users_id" />
+		<field object="document" search="1" attribute="etat_document_id" selector='1' />
+		<field object="document" search="1" attribute="used_as_padlock" inverted="1" />
+		<field object="document" attribute="file_found" />
+	</list>
+	
+	<create object="document" export='1'>
+		<notebook>
+			<page string="Nouveau menu">
+				<field object="document" search="1" attribute="hr_name" />
+				<field object="document" search="1" attribute="document_type_id" selector='1' />
+				<field object="document" search="1" attribute="date_creation" />
+				<field object="document" search="1" attribute="object_link" />
+				<field object="document" search="1" attribute="users_id" />
+				<field object="document" search="1" attribute="etat_document_id" selector='1' />
+				<field object="document" search="1" attribute="used_as_padlock" inverted="1" />
+				<field object="document" attribute="file_found" />
+			</page>
+		</notebook>
+	</create>
+</data>

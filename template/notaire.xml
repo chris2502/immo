@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Édition de notaire" />
+	<navigator object="notaire" create=""/>
+
+	<list object="notaire">
+		
+		<field search="1" attribute="nom" />
+		<field search="1" attribute="frais" />
+		<field search="1" attribute="autre_acte" />
+	</list>
+
+	<form object="notaire">
+		<notebook>
+			<page string="Informations">
+				<field attribute="notaire_id" readonly="1"/>
+				<field attribute="frais" />
+				<field attribute="autre_acte" />
+			</page>
+		</notebook>
+	</form>
+	
+	<create object="notaire">
+		<notebook>
+			<page string="Informations">
+				<field attribute="notaire_id" />
+				<field attribute="frais" />
+				<field attribute="autre_acte" />
+			</page>
+		</notebook>
+	</create>
+	
+
+</data>

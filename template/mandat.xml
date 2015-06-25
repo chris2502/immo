@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Édition d'mandat" />
+	<navigator object="mandat" />
+
+	<list object="mandat">
+		<field search="1" attribute="montant" />
+		<field search="1" attribute="detenteur" />
+		<field search="1" attribute="validite" />
+		<field search="1" attribute="mise_en_vente_id" />
+	</list>
+
+	<form object="mandat">
+		<notebook>
+			<page string="Informations">
+				<field attribute="montant" />
+				<field attribute="detenteur" />
+				<field attribute="validite" />
+				<field attribute="mise_en_vente_id" />
+			</page>
+		</notebook>
+	</form>
+	
+	<create object="mandat">
+		<notebook>
+			<page string="Informations">
+				<field attribute="montant" />
+				<field attribute="detenteur" />
+				<field attribute="validite" />
+				<field attribute="mise_en_vente_id" readonly="1"/>
+			</page>
+		</notebook>
+	</create>
+	
+
+</data>

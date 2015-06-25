@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+
+	<header />
+	<menu />
+	<title string="Process module" />
+	<navigator object="processmodule" />
+
+	<list object="processmodule" key="module_id">
+		<field object="processmodule" attribute="process_id" search="1" selector="1"/>
+		<field object="processmodule" attribute="name" search="1" />
+		<field object="processmodule" attribute="delai" search="1"/>
+		<field object="processmodule" attribute="class_id" search="1" selector="1"/>
+		<field object="processmodule" attribute="x" search="1" />
+		<field object="processmodule" attribute="y" search="1" />
+		<field object="processmodule" attribute="class_name" search="1" />
+		<field object="processmodule" attribute="visibility_user" />
+		<field object="processmodule" attribute="visibility_profile" />
+		<field object="processmodule" attribute="visibility_company" />
+	</list>
+
+	<create object="processmodule">
+		<notebook>
+			<page string="Informations">
+				<field object="processmodule" attribute="process_id" />
+				<field object="processmodule" attribute="name" />
+				<field object="processmodule" attribute="delai" />
+				<field object="processmodule" attribute="class_id" />
+				<field object="processmodule" attribute="data" />
+				<field object="processmodule" attribute="x" />
+				<field object="processmodule" attribute="y" />
+				<field object="processmodule" attribute="visibility_user" />
+				<field object="processmodule" attribute="visibility_profile" />
+				<field object="processmodule" attribute="visibility_company" />
+			</page>
+		</notebook>
+	</create>
+
+	<form object="processmodule">
+		<notebook>
+			<page string="Informations">
+				<field object="processmodule" attribute="process_id" />
+				<field object="processmodule" attribute="name" />
+				<field object="processmodule" attribute="delai" />
+				<field object="processmodule" attribute="class_id" />
+				<field object="processmodule" attribute="data" />
+				<field object="processmodule" attribute="x" />
+				<field object="processmodule" attribute="y" />
+				<field object="processmodule" attribute="class_name" />
+				<field object="processmodule" attribute="visibility_user" />
+				<field object="processmodule" attribute="visibility_profile" />
+				<field object="processmodule" attribute="visibility_company" />
+			</page>
+		</notebook>
+	</form>
+
+</data>

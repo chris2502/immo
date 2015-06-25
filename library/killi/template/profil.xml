@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+
+	<title string="Gestion des profils" />
+	<navigator object="profil" />
+
+	<list object="profil">
+		<field attribute="nom" search="1" />
+	</list>
+
+	<form object="profil">
+		<separator string="Droits sur les objets et les menus du profil [[%profil.nom]]" />
+
+		<notebook>
+			<page string="Objets">
+				<listing data_src="profil.getObjectList" object="object" get="profil.killi_profil_id" string="Liste des Objets">
+					<field attribute="nom" readonly="1" />
+					<field attribute="create" />
+					<field attribute="delete" />
+					<field attribute="view" />
+				</listing>
+			</page>
+
+			<page string="Noeuds du Workflow">
+				<listing data_src="profil.getNodeList" object="node" edit="0" string="Liste des Noeuds">
+					<field attribute="etat" readonly="1" />
+					<field attribute="workflow_id" readonly="1" />
+					<field attribute="type_id" readonly="1" />
+					<field attribute="allow" />
+				</listing>
+			</page>
+
+			<page string="Menus">
+				<listing data_src="profil.getMenuList" object="menurights" edit="0" string="Liste des Menus">
+					<field attribute="nom" readonly="1" />
+					<field attribute="view" />
+				</listing>
+			</page>
+
+			<page string="Utilisateurs">
+				<listing data_src="profil.getUserList" object="user" select='1' unlink='1' string='Liste des utilisateurs qui possèdent ce profil' pagination='25'>
+					<field attribute="nom_complet" readonly="1" />
+					<field attribute="actif" readonly='1' />
+				</listing>
+			</page>
+
+			<page string="Liens du Workflow" render_condition="defined('USE_LINK_RIGHTS')">
+				<listing data_src="profil.getLinkList" object="nodelink" key="link_id" edit='0'>
+					<field attribute="input_node" readonly="1" />
+					<field attribute="output_node" readonly="1" />
+					<field object="linkrights" attribute="move" />
+				</listing>
+			</page>
+		</notebook>
+
+	</form>
+
+	<create object="profil">
+		<notebook>
+			<page string="Nouveau profil">
+				<field attribute="nom" />
+				<field attribute="copy_of" selector='1' />
+			</page>
+		</notebook>
+	</create>
+
+</data>

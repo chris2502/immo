@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Édition de taxe" />
+	<navigator object="typetaxe" />
+
+	<list object="typetaxe">
+		<field search="1" attribute="nom_taxe" />
+	</list>
+
+	<form object="typetaxe">
+		<notebook>
+			<page string="Informations">
+				<field attribute="nom_taxe" id="typetaxe"/>
+			</page>
+		</notebook>
+	</form>
+	
+	<create object="typetaxe">
+		<notebook>
+			<page string="Informations">
+				<field attribute="nom_taxe" id="typetaxe"/>
+			</page>
+		</notebook>
+	</create>
+	
+
+</data>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Édition de partie local" />
+	<navigator object="partielocal" />
+
+	<list object="partielocal">
+		<field search="1" attribute="partie" />
+		<field search="1" attribute="mise_en_vente_id" />	
+	</list>
+
+	<form object="partielocal">
+		<notebook>
+			<page string="Informations">
+				<field attribute="partie" />
+				<field attribute="mise_en_vente_id" />
+			</page>
+		</notebook>
+	</form>
+	
+	<create object="partielocal">
+		<notebook>
+			<page string="Informations">
+				<field attribute="partie" />
+				<field attribute="mise_en_vente_id" />
+			</page>
+		</notebook>
+	</create>
+	
+
+</data>

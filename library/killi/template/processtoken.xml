@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+
+	<header />
+	<menu />
+	<!--<title string="Process Token"/> -->
+	<!--<navigator object="processtoken"/> -->
+
+	<list object="processtoken" key="token_id">
+		<field object="processtoken" attribute="process_id" search="1" />
+		<field object="processtoken" attribute="module_id" search="1" />
+		<field object="processtoken" attribute="class_name" search="1" />
+		<field object="processtoken" attribute="killi_user_id" search="1" />
+		<field object="processtoken" attribute="date" search="1" />
+		<field object="processtoken" attribute="profil_id" search="1"/>
+		<field object="processtoken" attribute="entreprise_id" search="1"/>
+	</list>
+
+	<create object="processtoken">
+		<notebook>
+			<page string="Informations">
+				<field object="processtoken" attribute="module_id" />
+				<field object="processtoken" attribute="class_name" />
+				<field object="processtoken" attribute="killi_user_id" />
+				<field object="processtoken" attribute="date" readonly="1"/>
+			</page>
+		</notebook>
+	</create>
+
+	<form object="processtoken">
+		<processviewer />
+	</form>
+
+</data>

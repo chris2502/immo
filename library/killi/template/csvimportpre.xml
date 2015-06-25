@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+
+	<header />
+	<menu />
+
+	<title string="Import de csv" />
+	<form object="csvimport" action="csvimport.save">
+		<newline />
+		<newline />
+		<group>
+			<col width="25%"></col>
+			<col>
+				<separator string="Sélectionner les attributs qui correspondent aux colonnes du csv" />
+				<key object="file" attribute="filename" />
+				<key object="obj" attribute="objname" />
+				<csvcol />
+				<submit object="csvimport" string="Enregistrer" />
+			</col>
+			<col width="25%"></col>
+		</group>
+	</form>
+</data>

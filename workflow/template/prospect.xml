@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Étape Prospect" />
+	<navigator object="local" />
+
+	<list object="local" show_wfcommentaire = "0" show_wfqualification = "0">
+		<workflow_button width="150px" string="Déplacer vers Offre" color="green" destination="wfacquisition.offre"/>
+		<workflow_button width="75px" string="Refuser" color="red" destination="wfacquisition.refus_du_prospect"/>
+		<field search="1" attribute="departement" />
+		<field search="1" attribute="numero_rue" />
+		<field search="1" attribute="type_rue" />
+		<field search="1" attribute="nom_rue" />
+		<field search="1" attribute="code_postal" />
+		<field search="1" attribute="commune" />
+		<field search="1" attribute="plaque_id" />
+		<!-- <field search="1" attribute="niveau" />
+		<field search="1" attribute="estimation_prix" unit="€" format="%0.02f"/> -->
+		<field search="1" attribute="moyen_marche" unit="€" format="%0.02f"/>
+		<field search="1" attribute="prix_demande" unit="€" format="%0.02f"/>
+		<!--  <field search="1" attribute="travaux"/> -->
+		<field search="1" attribute="statut_acquisition"/>
+	</list>	
+	
+	
+	<form object="local" width="50%">
+		<notebook>
+			<page string="Informations">
+				
+				<group>
+					<col width="50%">
+						<field attribute="numero_rue" />
+						<field attribute="type_rue" id="local_rue_form" />
+						<field attribute="nom_rue" />
+						<field attribute="code_postal" id="local_cp" />
+						<field attribute="departement" id="local_dep"/>
+						<field attribute="commune" />
+						<field attribute="niveau" />
+						<field attribute="surface_brut" unit="m²" id="brut"/>
+						<field attribute="surface_m_carre" unit="m²" id="carre"/>
+						<field attribute="estimation_prix" unit="€" id="estim"/>
+						<field attribute="moyen_marche" unit="€" id="moyen"/>
+						<field attribute="prix_demande" unit="€" id="demande"/>
+						<field attribute="cle_acces" />
+						<field attribute="exploite" />
+						<field attribute="plaque_id" />
+						<!-- <field attribute="travaux" readonly="1"/> -->
+						<field attribute="statut_acquisition"/>
+					</col>
+					<col width="50%">
+						
+						 <listing target="blank" object="Entite" key="entite_id" data_src="local.listing_entite" pagination="5" string="[%title.entity]" select="1" unlink="1">
+							<field search="1" attribute="type" create="1" readonly="1"/>
+							<field search="1" attribute="nom" readonly="1"/>			
+						</listing>
+						
+						
+						<listing target="blank" object="AssembleeGenerale" key="assemblee_generale_id" env="assemblee_generale.local_id=local.local_id" data_src="local.listing_assemblee_generale" pagination="10" string="Assemblee Generale" create="1" unlink="1">
+							<field search="1" attribute="date_ag" readonly="1"/>				
+						</listing>
+						
+						<listing target="blank" object="Commentaire" key="commentaire_id" env="commentaire.local_id=local.local_id" data_src="local.listing_commentaire" pagination="5" string="Commentaire" create="1" unlink="1">
+							<field search="1" attribute="titre_commentaire" readonly="1"/>
+							<field search="1" attribute="contenu" readonly="1"/>
+							<field search="1" attribute="etape" readonly="1"/>
+						</listing>
+						
+						<listing target="blank" object="Travaux" key="travaux_id" env="travaux.local_id=local.local_id" data_src="local.listing_travaux" pagination="5" string="Travaux" create="1"  unlink="1">
+							<field search="1" attribute="typeTravaux_id" readonly="1"/>	
+							<field search="1" attribute="date_debut_travaux" readonly="1"/>	
+							<field search="1" attribute="date_fin_travaux" readonly="1"/>
+							<field search="1" attribute="description_travaux" readonly="1"/>			
+						</listing>
+					</col>
+
+				</group>
+				
+			</page>
+		</notebook>
+	</form>
+	
+	
+</data>

@@ -1,0 +1,25 @@
+.ui-widget-header { background: #333 !important; color: white !important; }
+
+body { background: -webkit-linear-gradient(#f5cc3b, #ed8b1a); background: -o-linear-gradient(#f5cc3b, #ed8b1a); background: -moz-linear-gradient(#f5cc3b, #ed8b1a); background-color: linear-gradient(#f5cc3b, #ed8b1a); margin-bottom: 200px !important; }
+
+/* Main menu */
+#main_menu ul { background: black !important; }
+#main_menu a { color: #f5cc3b; font-size: 14px; }
+#main_menu a span { padding: 8px 6px 10px 6px; font-family: 'Creepster'; font-size: 18px; }
+#main_menu a:hover span { background-color: #f5cc3b; color: black; }
+
+.header-notif, .header-account, .header-logout { list-style: none; background-color: #ed8b1a; padding: 4px; border-radius: 3px; }
+
+.menu_home_button { background: url('./images/pumpkin.png') no-repeat center center !important; height: 42px !important; width: 42px !important; padding: 0 !important; margin: 0 !important; }
+.menu_home_button span { display: none !important; }
+
+#scary { position: absolute; top:0;bottom:0;left:0;right:0; z-index: 999999; background-color: black; text-align: center; vertical-align: center; }
+
+table.title { top: 72px !important; border: none !!important; border-collapse: collapse !important; }
+table.title td { font-family: 'Creepster'; font-size: 30px; background: #f5cc3b !important; color: #c00; padding: 8px; border: none !!important; }
+
+#hidden_white_bg_header { height: 150px; }
+#hidden_white_bg { margin-top: 149px !important; }
+.navigator { top: 124px !important; }
+.header-lock-zoom {  }
+.ui-state-focus { background: none !important; border: none !important; }

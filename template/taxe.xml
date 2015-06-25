@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Édition de taxe" />
+	<navigator object="taxe" />
+
+	<list object="taxe">
+		
+		<field search="1" attribute="type_taxe_id" />
+		<field search="1" attribute="montant" />
+		<field search="1" attribute="local_id" />
+		<field search="1" attribute="statut_acquisition" />	
+	</list>
+
+	<form object="taxe">
+		<notebook>
+			<page string="Informations">
+				<field attribute="type_taxe_id" />
+				<field attribute="montant" id="montant"/>
+				<field attribute="local_id" readonly="1"/>
+				<field attribute="statut_acquisition" />	
+			</page>
+		</notebook>
+	</form>
+	
+	<create object="taxe">
+		<notebook>
+			<page string="Informations">
+				<field attribute="type_taxe_id" />
+				<field attribute="montant" id="montant"/>
+				<field attribute="local_id" readonly="1"/>
+			</page>
+		</notebook>
+	</create>
+	
+
+</data>

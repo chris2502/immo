@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="validator.xsd">
+	<header />
+	<menu />
+	<title string="Type de tâches" />
+
+	<navigator object="taskaction" />
+
+	<list object="taskaction" key="task_action_id">
+		<field attribute="task_action_id" search="1" reference="0" />
+		<field attribute="task_name" search="1" />
+	</list>
+
+	<form object="taskaction" key="task_action_id">
+		<notebook>
+			<page string="Informations">
+				<field attribute="task_name" />
+				<field attribute="task_internal_name" />
+			</page>
+		</notebook>
+	</form>
+
+	<create object="taskaction" key="task_action_id">
+		<notebook>
+			<page string="Informations">
+				<field attribute="task_name" />
+				<field attribute="task_internal_name" />
+			</page>
+		</notebook>
+	</create>
+</data>
